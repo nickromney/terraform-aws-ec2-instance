@@ -85,6 +85,7 @@ module "ec2_instance" {
   allowed_ports               = var.allowed_ports
   allowed_ports_udp           = var.allowed_ports_udp
   instance_profile            = aws_iam_instance_profile.test.name
+  user_data                   = var.user_data
 
   context = module.this.context
 }
